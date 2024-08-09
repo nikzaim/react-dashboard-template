@@ -25,8 +25,8 @@ export function NavbarItem({ to, name, Icon }: NavbarItemProps) {
 
   return (
     <Link to={to} className={isActive ? "flex items-center gap-3 px-3 py-2 text-primary bg-muted/40 rounded-lg" : "flex items-center gap-3 px-3 py-2 text-muted-foreground transition-all hover:text-primary"}>
-      <Icon size={24} color={isActive ? "#1d4ed8" : "#666666"} weight="duotone" />
-      <p className={isActive ? "text-blue-600" : "text-gray-500"}>{name}</p>
+      <Icon size={24} color={isActive ? "#f97316" : "#858585"} weight="duotone" />
+      <p className={isActive ? "text-primary" : "text-[#858585]"}>{name}</p>
     </Link>
   );
 }
