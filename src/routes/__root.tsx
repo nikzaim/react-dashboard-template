@@ -31,7 +31,7 @@ function RootComponent() {
         <div className="flex flex-col">
           <HeaderRight />
           <ScrollArea className="h-[calc(100vh-60px)] w-full rounded-md">
-            <main className="flex flex-grow flex-col gap-4 p-4 lg:gap-6 lg:p-6">
+            <main className="">
               <div className="p-4">
                 <Outlet />
               </div>

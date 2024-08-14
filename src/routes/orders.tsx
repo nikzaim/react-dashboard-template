@@ -315,12 +315,14 @@ function OrdersComponent() {
 
   return (
     <>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 max-w-[calc(100vw-48px)] md:gap-6 md:max-w-[calc(100vw-48px-220px)] lg:max-w-[calc(100vw-48px-280px)]">
         <div className="flex">
           <h1 className="text-xl font-medium">Orders</h1>
         </div>
 
-        <DataTable columns={columns} data={data} />
+        <div className="w-full md:max-w-[100vw-280px-8rem] overflow-hidden">
+          <DataTable columns={columns} data={data} />
+        </div>
       </div>
     </>
   );
